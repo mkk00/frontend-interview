@@ -171,3 +171,8 @@ bind 는 새로운 함수를 생성하며 변수에 할당하여 사용합니다
 
   console.log(obj.getValue()); // 출력: 42
 ```
+
+<br/>
+
+## 참고
+- https://poiemaweb.com/js-this
