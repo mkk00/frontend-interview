@@ -5,6 +5,7 @@
 
 ## Javascript
 - [var, let, const 의 차이점에 대해 설명해주세요.](js/var-let-const-diff.md)
+- [실행 컨텍스트(Execution Context)에 대해서 설명해주세요.](js/execution-context.md)
 - [변수 호이스팅과 함수 호이스팅의 차이점을 설명해주세요.](js/hoisting.md)
 - [this 에 대해 설명해주세요.](js/this.md)
 - [클로저에 대해 설명해주세요.](js/closure.md)
