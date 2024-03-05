@@ -15,19 +15,22 @@ CORS 이 필요한 이유는 이러한 제약이 없다면 해커가 `CSRF(Cross
 `https:(=Protocol)` //` www.myBlogPage.com(=Hostname)` : `3000(=Port)` / `review/write(=Pathname)` `?sort=asc...(=Search)` `#hash(=Hash)`
 - 도메인(Hostname) : myBlogPage.com
 - 출처(Origin) : https://www.myBlogPage.com:3000
+
 <br/>
 
 ![https://docs.tosspayments.com/resources/glossary/cors#cors%EA%B5%90%EC%B0%A8-%EC%B6%9C%EC%B2%98-%EB%A6%AC%EC%86%8C%EC%8A%A4-%EA%B3%B5%EC%9C%A0](/image/tosspayments-cors-url-img.png)
 출처 : [토스페이먼츠 개발자센터 포스팅 : CORS(교차 출처 리소스 공유)](https://docs.tosspayments.com/resources/glossary/cors#cors%EA%B5%90%EC%B0%A8-%EC%B6%9C%EC%B2%98-%EB%A6%AC%EC%86%8C%EC%8A%A4-%EA%B3%B5%EC%9C%A0)
+
 <br/>
 
 ## CORS 에러 대응 방법
 ### 서버에서 `Access-Control-Allow-Origin` 응답 헤더 세팅하기
 서버에서 HTTP 응답 헤더를 설정해서 요청을 수락할 출처를 명시적으로 지정할 수 있습니다.
 
-```http
+```javascript
 'Access-Control-Allow-Origin' : https://naver.com
 ```
+
 `*` 을 설정하면 출처에 상관없이 모든 리소스에 접근할 수 있는 와일드카드이기 때문에 보안에 취약해집니다.
 
 ### 프록시 서버 사용하기
@@ -39,7 +42,8 @@ CORS 이 필요한 이유는 이러한 제약이 없다면 해커가 `CSRF(Cross
 
 ### Chrome 확장 프로그램
 `Allow CORS: Access-Control-Allow-Origin` 크롬 확장 프로그램을 설치하면 로컬 환경에서 API 테스트 시 CORS 문제를 해결할 수 있습니다.
-[> Allow CORS: Access-Control-Allow-Origin 바로가기](https://chromewebstore.google.com/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?pli=1)
+
+[Allow CORS: Access-Control-Allow-Origin 바로가기](https://chromewebstore.google.com/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?pli=1)
 
 <br/>
 
