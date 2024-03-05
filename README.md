@@ -15,3 +15,4 @@
 - [브라우저의 렌더링 원리에 대해 설명해주세요.](web/browser-rendering.md)
 - [CSR 과 SSR 은 어떤 차이점이 있는지 설명해주세요.](web/csr-ssr-diff.md)
 - [브라우저 저장소(Web Storage)에 대해 설명해주세요.(LocalStorage, SessionStorage, Cookie)](web/web-storage.md)
+- [CORS 에 대처하는 방법에 대해 설명해주세요.](web/cross-origin-resource-sharing.md)
