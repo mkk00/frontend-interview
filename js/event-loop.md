@@ -45,6 +45,11 @@ Web API 는 자바스크립트 엔진에서 정의되지 않은 메서드를 브
 ![http://latentflip.com/loupe/?code=JC5vbignYnV0dG9uJywgJ2NsaWNrJywgZnVuY3Rpb24gb25DbGljaygpIHsKICAgIHNldFRpbWVvdXQoZnVuY3Rpb24gdGltZXIoKSB7CiAgICAgICAgY29uc29sZS5sb2coJ1lvdSBjbGlja2VkIHRoZSBidXR0b24hJyk7ICAgIAogICAgfSwgMjAwMCk7Cn0pOwoKY29uc29sZS5sb2coIkhpISIpOwoKc2V0VGltZW91dChmdW5jdGlvbiB0aW1lb3V0KCkgewogICAgY29uc29sZS5sb2coIkNsaWNrIHRoZSBidXR0b24hIik7Cn0sIDUwMDApOwoKY29uc29sZS5sb2coIldlbGNvbWUgdG8gbG91cGUuIik7!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D](/image/event-loop.gif.gif)
 출처 : [이벤트 루프 시각화](http://latentflip.com/loupe/?code=JC5vbignYnV0dG9uJywgJ2NsaWNrJywgZnVuY3Rpb24gb25DbGljaygpIHsKICAgIHNldFRpbWVvdXQoZnVuY3Rpb24gdGltZXIoKSB7CiAgICAgICAgY29uc29sZS5sb2coJ1lvdSBjbGlja2VkIHRoZSBidXR0b24hJyk7ICAgIAogICAgfSwgMjAwMCk7Cn0pOwoKY29uc29sZS5sb2coIkhpISIpOwoKc2V0VGltZW91dChmdW5jdGlvbiB0aW1lb3V0KCkgewogICAgY29uc29sZS5sb2coIkNsaWNrIHRoZSBidXR0b24hIik7Cn0sIDUwMDApOwoKY29uc29sZS5sb2coIldlbGNvbWUgdG8gbG91cGUuIik7!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D)
 
+## 동기적으로 호출되는 콜백함수 VS 비동기적응로 호출되는 콜백함수 차이점
+동기적으로 호출되는 콜백함수의 경우 함수 내에서 동기적으로 호출되며, 함수의 실행 흐름을 차단하고 기다립니다.
+
+반면 비동기적으로 호출되는 콜백함수의 경우 비동기적으로 작업을 수행하고 작업이 완료되면 콜백함수가 이벤트 루프(Event Loop)를 통해 호출됩니다.
+
 ## 참고
 - https://medium.com/@momlin069/event-loop%EA%B0%80-%EB%AD%90%EC%95%BC-aadcc488f820
 - https://poiemaweb.com/js-event
