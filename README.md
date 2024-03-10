@@ -14,6 +14,7 @@
 - [동기 방식(Synchronous)과 비동기 방식(Asynchronous)의 차이점을 설명해주세요.](js/synchronous-asynchronous.md)
 - [블로킹(Blocking), 논 블로킹(Non-Blocking) 에 대해 설명해주세요.](js/blocking-non-blocking.md)
 - [이벤트 루프(Event Loop)에 대해 설명해주세요.](js/event-loop.md)
+- [마이크로 큐(Microqueue)와 태스크 큐(macroTask queue)에 대해 설명해주세요.](js/microtask-queue-task-queue.md)
 
 ## Web
 - [브라우저의 렌더링 원리에 대해 설명해주세요.](web/browser-rendering.md)
